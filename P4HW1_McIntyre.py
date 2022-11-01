@@ -3,7 +3,12 @@
 # Emma McIntyre
 # 11/1/22
 
-# Ask the user for 6 grades for the 6 mofules.
+# Ask the user for 6 grades for the 6 modules.
 # Add them to a list.
 
-grades = [0, 0, 0, 0, 0, 0]
+grades = []
+for grade in range(6):
+    grade = int(input("Enter grade: "))
+    grades.append(grade)
+    
+print(grades)

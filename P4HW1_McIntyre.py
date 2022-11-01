@@ -9,11 +9,15 @@
 grades = []
 
 for grade in range(6):
-    grade = int(input("Enter grade: "))
+    grade = float(input("Enter grade: "))
     grades.append(grade)
-    
-print(grades)
-# max(grades) and min (Grades)
+
+print("-"*10, "Results", "-"*10, sep="")
+print("The grades are: ", grades)
+# max(grades) and min (grades)
 # to show lowest and highest in the list
-print("Lowest grade: ", min(grades))
-print("Highest grade: ", max(grades))
+print("Lowest Grade:    ", min(grades))
+print("Highest Grade:   ", max(grades))
+print("Sum of Grades:   ", sum(grades))
+print("Average:         ", f"{(sum(grades) / 6):.2f}")
+print("-"*30)
